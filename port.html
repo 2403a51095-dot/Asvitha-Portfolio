@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reddy Asvitha | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+:root{
+    --primary:#2563eb;
+    --primary-dark:#1e40af;
+    --secondary:#0f172a;
+    --accent:#38bdf8;
+    --bg:#f1f5f9;
+    --card:#ffffff;
+    --text:#1e293b;
+    --text-light:#64748b;
+}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;}
+body{background:var(--bg);color:var(--text);line-height:1.6;}
+
+header{
+    background:var(--secondary);
+    color:white;
+    padding:18px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+nav a{
+    color:#cbd5e1;
+    margin-left:20px;
+    text-decoration:none;
+    font-weight:500;
+}
+nav a:hover{color:var(--accent);}
+
+.hero{
+    background:linear-gradient(135deg,#0f172a,#1e3a8a);
+    color:white;
+    padding:70px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+.hero-text{flex:1;min-width:280px;}
+.hero-text h1{font-size:40px;}
+.hero-text h3{font-weight:400;color:#cbd5e1;margin-top:5px;}
+.hero-text p{margin-top:15px;max-width:520px;}
+.hero img{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid white;
+    margin-top:20px;
+}
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    margin-right:10px;
+    padding:10px 22px;
+    background:var(--primary);
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+    font-weight:600;
+}
+.btn:hover{background:var(--primary-dark);}
+
+section{padding:60px 8%;}
+h2{
+    margin-bottom:25px;
+    border-bottom:3px solid var(--primary);
+    display:inline-block;
+    padding-bottom:5px;
+}
+
+.container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:20px;
+}
+.card{
+    background:var(--card);
+    padding:20px;
+    border-radius:8px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+.card:hover{
+    transform:translateY(-5px);
+    border:1px solid var(--primary);
+}
+
+.contact span{
+    display:block;
+    margin:10px 0;
+}
+footer{
+    background:var(--secondary);
+    color:#cbd5e1;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2>Reddy Asvitha</h2>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+    <div class="hero-text">
+        <h1>Computer Science Student</h1>
+        <h3>SR University</h3>
+        <p>
+            Building skills in coding, app design, and machine learning basics.
+            Passionate about modular solutions, bioinformatics, and creative prototyping.
+        </p>
+        <a href="#contact" class="btn">Contact Me</a>
+    </div>
+    <img src="WhatsApp Image 2026-02-12 at 12.42.27 PM.jpeg" alt="Profile Photo">
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I’m a Computer Science Engineering student at SR University, driven by curiosity 
+        and a deep interest in how technology can solve real-world problems. 
+        I enjoy modular design, creative prototyping, and collaborative problem-solving.
+    </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2>Skills & Expertise</h2>
+    <div class="container">
+        <div class="card">Programming: Python, C, HTML, CSS, JavaScript</div>
+        <div class="card">Core CS: Data Structures, OS, DBMS, Networks</div>
+        <div class="card">Machine Learning: Basic ML workflows</div>
+        <div class="card">Bioinformatics: DEG analysis exploration</div>
+        <div class="card">Cloud: AWS (Basics)</div>
+        <div class="card">Creative Skills: Wireframe design & prototyping</div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="container">
+        <div class="card">
+            <h3>Modular App Design</h3>
+            <p>Built small-scale apps with clear modular breakdowns for scalability.</p>
+        </div>
+        <div class="card">
+            <h3>Nabha portal</h3>
+            <p>Developed a web-based NABHA Portal to manage hospital accreditation processes, compliance tracking, and organized documentation efficiently</p>
+        </div>
+        <div class="card">
+            <h3>Medicine Remainder</h3>
+            <p>Created a medicine reminder app to help users manage their medication schedules.</p>
+        </div>
+        <div class="card">
+            <h3>Creative Prototyping</h3>
+            <p>Designed modern web UI wireframes with minimalistic design principles.</p>
+        </div>
+    </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+    <h2>Education</h2>
+    <div class="container">
+        <div class="card">
+            <strong>2024 – 2028</strong><br>
+            SR University, Warangal<br>
+            B.Tech in Computer Science Engineering<br>
+            CGPA: 8.3
+        </div>
+        <div class="card">
+            <strong>2022 – 2024</strong><br>
+            Suvidyaa Junior College<br>
+            91%
+        </div>
+        <div class="card">
+            <strong>Till 2022</strong><br>
+            Orbit-e-techno School<br>
+            100%
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact</h2>
+    <div class="card contact">
+        <span><b>Phone:</b> +91 7675009215</span>
+        <span><b>Email:</b> asvithareddy88@gmail.com</span>
+        <span><b>Location:</b> SR University</span>
+    </div>
+</section>
+
+<footer>
+    © 2026 — Reddy Asvitha
+</footer>
+
+</body>
+</html>
